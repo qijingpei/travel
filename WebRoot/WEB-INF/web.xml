@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.qust.travel.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PublishServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.PublishServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StrategyServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.StrategyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CityServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.CityServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AttractionServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.AttractionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminCityServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminCityServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>AdminAttractionServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminAttractionServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AdminAddAttractionServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminAddAttractionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FoodServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.FoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.CommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PartnerServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.PartnerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminFoodServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminFoodServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminCommentServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminCommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminUserServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminStrategyServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminStrategyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminPartnerServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminPartnerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TravelItemServlet</servlet-name>
+    <servlet-class>com.qust.travel.web.servlet.TravelItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminTravelItemServlet</servlet-name>
+    <servlet-class>com.qust.travel.admin.web.servlet.AdminTravelItemServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 配置过滤器 -->
+  <filter>
+    <display-name>LoginFilter</display-name>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.qust.travel.filter.LoginFilter</filter-class>
+  </filter>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishServlet</servlet-name>
+    <url-pattern>/PublishServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StrategyServlet</servlet-name>
+    <url-pattern>/StrategyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CityServlet</servlet-name>
+    <url-pattern>/CityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AttractionServlet</servlet-name>
+    <url-pattern>/AttractionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminCityServlet</servlet-name>
+    <url-pattern>/AdminCityServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>AdminAttractionServlet</servlet-name>
+    <url-pattern>/AdminAttractionServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>AdminAddAttractionServlet</servlet-name>
+    <url-pattern>/AdminAddAttractionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FoodServlet</servlet-name>
+    <url-pattern>/FoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/CommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PartnerServlet</servlet-name>
+    <url-pattern>/PartnerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminFoodServlet</servlet-name>
+    <url-pattern>/AdminFoodServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminCommentServlet</servlet-name>
+    <url-pattern>/AdminCommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminUserServlet</servlet-name>
+    <url-pattern>/AdminUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminStrategyServlet</servlet-name>
+    <url-pattern>/AdminStrategyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminPartnerServlet</servlet-name>
+    <url-pattern>/AdminPartnerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TravelItemServlet</servlet-name>
+    <url-pattern>/TravelItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminTravelItemServlet</servlet-name>
+    <url-pattern>/AdminTravelItemServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 配置过滤器要过滤的页面  start-->
+  <filter-mapping>
+   <filter-name>LoginFilter</filter-name>
+   <url-pattern>/jsps/strategy/add.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+   <filter-name>LoginFilter</filter-name>
+   <url-pattern>/jsps/partner/add.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+   <filter-name>LoginFilter</filter-name>
+   <url-pattern>/StrategyServlet</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+   <filter-name>LoginFilter</filter-name>
+   <url-pattern>/jsps/strategy/edit.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+   <filter-name>LoginFilter</filter-name>
+   <url-pattern>/jsps/user/person.jsp</url-pattern>
+  </filter-mapping>
+  <!-- 配置过滤器要过滤的页面  end-->
+</web-app>
